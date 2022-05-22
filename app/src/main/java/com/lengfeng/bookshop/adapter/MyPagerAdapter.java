@@ -1,4 +1,4 @@
-package com.lengfeng.bookshop.ui.dashboard;
+package com.lengfeng.bookshop.adapter;
 
 
 import android.view.View;

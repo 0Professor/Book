@@ -1,4 +1,4 @@
-package com.lengfeng.bookshop.ui.home;
+package com.lengfeng.bookshop.ui.orderhistory;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.lengfeng.bookshop.databinding.FragmentHomeBinding;
+import com.lengfeng.bookshop.databinding.FragmentOrderhistoryBinding;
 
-public class HomeFragment extends Fragment {
+public class OrderHistoryFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentOrderhistoryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        OrderHistoryViewModel orderHistoryViewModel =
+                new ViewModelProvider(this).get(OrderHistoryViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentOrderhistoryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textNotifications;
+        orderHistoryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

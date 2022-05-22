@@ -21,10 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.dashboard.BookPager"/>
-        <activity android:name=".ui.dashboard.viewone.BookPagerViewOne"/>
-        <activity android:name=".ui.dashboard.viewone.BookPagerViewTwo"/>
-        <activity android:name=".ui.dashboard.viewone.BookPagerViewThree"/>
+        <activity android:name=".ui.shoppingcar.BookPagerActivity"/>
+        <activity android:name=".ui.shoppingcar.pager.BookPagerViewOne"/>
+        <activity android:name=".ui.shoppingcar.pager.BookPagerViewTwo"/>
+        <activity android:name=".ui.shoppingcar.pager.BookPagerViewThree"/>
     </application>
 
 </manifest>

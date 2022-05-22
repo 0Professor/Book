@@ -1,4 +1,4 @@
-package com.lengfeng.bookshop.ui.notifications;
+package com.lengfeng.bookshop.ui.shoppingcar;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.lengfeng.bookshop.databinding.FragmentNotificationsBinding;
+import com.lengfeng.bookshop.databinding.FragmentShoppingcarBinding;
 
-public class NotificationsFragment extends Fragment {
+public class ShoppingCartFragment extends Fragment {
 
-    private FragmentNotificationsBinding binding;
+    private FragmentShoppingcarBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NotificationsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        ShoppingCartViewModel dashboardViewModel =
+                new ViewModelProvider(this).get(ShoppingCartViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentShoppingcarBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textDashboard;
+        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

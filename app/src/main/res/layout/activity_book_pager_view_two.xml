@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#00d2d3"
     android:gravity="center"
-    tools:context=".ui.dashboard.viewone.BookPagerViewTwo">
+    tools:context=".ui.shoppingcar.pager.BookPagerViewTwo">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

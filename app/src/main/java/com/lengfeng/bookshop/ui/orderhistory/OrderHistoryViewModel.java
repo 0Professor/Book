@@ -1,14 +1,14 @@
-package com.lengfeng.bookshop.ui.dashboard;
+package com.lengfeng.bookshop.ui.orderhistory;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class DashboardViewModel extends ViewModel {
+public class OrderHistoryViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public DashboardViewModel() {
+    public OrderHistoryViewModel() {
         mText = new MutableLiveData<>();
 
     }

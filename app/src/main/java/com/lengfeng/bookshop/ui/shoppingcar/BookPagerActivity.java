@@ -1,4 +1,4 @@
-package com.lengfeng.bookshop.ui.dashboard;
+package com.lengfeng.bookshop.ui.shoppingcar;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -9,10 +9,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.lengfeng.bookshop.R;
+import com.lengfeng.bookshop.adapter.MyPagerAdapter;
 
 import java.util.ArrayList;
 
-public class BookPager extends AppCompatActivity {
+public class BookPagerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

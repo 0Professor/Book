@@ -3,23 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/home">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.lengfeng.bookshop.ui.home.HomeFragment"
+        android:id="@+id/home"
+        android:name="com.lengfeng.bookshop.ui.booklist.BookListFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_booklist" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.lengfeng.bookshop.ui.dashboard.DashboardFragment"
+        android:id="@+id/shopping_car"
+        android:name="com.lengfeng.bookshop.ui.shoppingcar.ShoppingCartFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_shoppingcar" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.lengfeng.bookshop.ui.notifications.NotificationsFragment"
+        android:id="@+id/order_history"
+        android:name="com.lengfeng.bookshop.ui.orderhistory.OrderHistoryFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_orderhistory" />
+
+
 </navigation>
